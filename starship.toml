@@ -4,7 +4,7 @@ add_newline = false
 command_timeout = 1000
 
 format = """
-$hostname[@](bold cyan)$os\
+$hostname[@](bold #D70A53)$os\
 $directory\
 $git_branch\
 $git_status \
@@ -47,18 +47,34 @@ disabled = false
 # ---
 
 [os]
-format = '[$symbol](bold green) '
+format = '[$symbol](bold #D70A53) '
 disabled = false
 
 [os.symbols]
 Macos = '󰀵'
 Mint = "󰣭"
-
+Windows = "󰍲"
+Ubuntu = "󰕈"
+SUSE = ""
+Raspbian = "󰐿"
+Manjaro = ""
+Linux = "󰌽"
+Gentoo = "󰣨"
+Fedora = "󰣛"
+Alpine = ""
+Amazon = ""
+Android = ""
+Arch = "󰣇"
+Artix = "󰣇"
+CentOS = ""
+Debian = "󰣚"
+Redhat = "󱄛"
+RedHatEnterprise = "󱄛"
 
 # Shows the hostname
 [hostname]
 ssh_only = false
-format = '[$hostname](bold cyan)'
+format = '[$hostname](bold #D70A53)'
 disabled = false
 ssh_symbol = " "
 
@@ -69,7 +85,7 @@ fish_style_pwd_dir_length=100
 home_symbol = '󰋜 ~'
 read_only_style = '197'
 read_only = '  '
-format = '[$path]($style)[$read_only]($read_only_style) '
+format = '[$path](bold #D70A53)[$read_only]($read_only_style) '
 
 # Shows current git branch
 [git_branch]
